@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severo Portfólio</title>
+    <link rel="stylesheet" type="text/css" href="stylesCard.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li id="home" class="selected" ><a href="#Home">Início</a></li>
+                <li id="sobre"><a href="#Sobre">Sobre</a></li>
+                <li id="projetos"><a href="#Projetos">Projetos</a></li>
+                <li id="contatos"><a href="#Contatos">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="scrollbar" id="scrollbar">
+        <div class="force-overflow">
+
+            <section id="Home">
+
+                <article style="width: 40%; float: left;">
+                    <div class="mouse_move">
+                        <img src="img/eeveeVermelho.png" alt="direita" class="mouse icone" value="5">
+                    </div>
+                </article>
+
+                <article id="articleTitle" style="width: 60%; float: right;">
+                    <h1 class="title mouse" value="-2">
+                        <img src="img/Estrela.svg" alt="Estrelinha" class="Estrela EstrelinhaE" id="img-piscar1">
+                        <img src="img/Estrela.svg" alt="Estrelinha" class="Estrela" id="img-piscar2">
+                        Eu sou a Rary
+                        <img src="img/Estrela.svg" alt="Estrelinha" class="Estrela" id="img-piscar3">
+                        <img src="img/Estrela.svg" alt="Estrelinha" class="Estrela EstrelinhaD" id="img-piscar4">
+                        <br>
+                        Uma Estudante
+                    </h1>
+                    <p>Meu objetivo é me tornar uma desenvolvedora <b>Full Stack</b></p>
+                </article>
+
+                <div id="divScrollArrow">
+                    <div class="scroll-down">
+                        <a id="scrollArrowLink" href="#Sobre"></a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="Sobre">
+
+                <article class="SobreCard" style="float: left;" data-tilt data-tilt-max="10" data-tilt-speed="50"
+                    data-tilt-perspective="3000">
+
+                    <h1 style="color: black;">Sobre</h1>
+                    <p>
+                        &emsp;Meu objetivo é me tornar uma desenvolvedora full stack e, para isso, estou constantemente
+                        estudando e em busca
+                        de novas oportunidades de aprendizado e aprimoramento de minhas habilidades.
+                        Estou sempre disposta a novas oportunidades de aprendizado e desafios.
+                        Estudante de Análise e desenvolvimento de sistemas, técnica em Administração e Informática para
+                        Internet.
+                    </p>
+
+                </article>
+
+                <article style="width: 30%; float: right; display: flex;">
+                    <div class="mouse_move">
+                        <img src="img/vaporeon.png" alt="esquerda" class="mouse icone" value="3"
+                            style="transform: scaleX(-1);">
+                    </div>
+                </article>
+
+            </section>
+
+            <div id="divProjetos">
+                <h1 id="Projetos">Projetos</h1>
+                <section id="sectionProjetos" class="Projetos">
+
+                    <article>
+
+                        <div class="card">
+                            <div class="additional">
+                                <div class="more-info">
+                                    <h2>Doguinhos Pastoreiros</h2>
+                                    <div class="coords">
+                                        <span>Acessar site</span>
+                                        <span><a href="Projetos/Doguinhos Pastoreiros/doguinhos_pastoreiros.html"
+                                                target="_blank">Doguinhos</a></span>
+                                    </div>
+                                    <div class="coords">
+                                        <span>GitHub</span>
+                                        <span><a href="https://github.com/velocirary/PWEB/tree/main/Atividade%204"
+                                                target="_blank">Código Fonte</a></span>
+                                    </div>
+                                    <div class="stats">
+                                        <div class="value">HTML</div>
+                                        <div class="value">CSS</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <img src="img/Doguinhos.jpg" style="height: -webkit-fill-available;">
+                                <span class="more">mais informações ></span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="additional">
+                                <div class="more-info">
+                                    <h2>Noticias Rary</h2>
+                                    <div class="coords">
+                                        <span>Acessar site</span>
+                                        <span><a href="Projetos/Noticias/noticias.html" target="_blank">Noticias
+                                                Rary</a></span>
+                                    </div>
+                                    <div class="coords">
+                                        <span>GitHub</span>
+                                        <span><a href="https://github.com/velocirary/PWEB/tree/main/Atividade%205"
+                                                target="_blank">Código Fonte</a></span>
+                                    </div>
+                                    <div class="stats">
+                                        <div class="value">HTML</div>
+                                        <div class="value">CSS</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <img src="img/Noticias.jpg" style="height: -webkit-fill-available;">
+                                <span class="more">mais informações ></span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article>
+
+                        <div class="card">
+                            <div class="additional">
+                                <div class="more-info">
+                                    <h2>Jo-Ken-Pô</h2>
+                                    <div class="coords">
+                                        <span>Acessar site</span>
+                                        <span><a href="Projetos/Jo-Ken-Po/Index.html" target="_blank">Jo-Ken-Pô</a></span>
+                                    </div>
+                                    <div class="coords">
+                                        <span>GitHub</span>
+                                        <span><a href="https://github.com/velocirary/PWEB/tree/main/Atividade%207"
+                                                target="_blank">Código Fonte</a></span>
+                                    </div>
+                                    <div class="stats">
+                                        <div class="value">HTML</div>
+                                        <div class="value">CSS</div>
+                                        <div class="value">JS</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general">
+                                <img src="img/jokenpo.jpg" style="height: -webkit-fill-available;">
+                                <span class="more">mais informações ></span>
+                            </div>
+                        </div>
+
+                        <div class="mouse_move umbreon">
+                            <img src="img/umbreon.png" alt="esquerda" class="mouse icone" value="3"
+                                style="transform: scaleX(-1);" />
+                        </div>
+
+                    </article>
+
+                </section>
+            </div>
+            
+            <section id="Contatos">
+
+                <article>
+
+                    <p>Sinta-se à vontade para entrar em contato comigo para conversarmos sobre possíveis projetos e colaborações.</p>
+                    
+                    <ul class="icones">
+                    
+                        <li onclick="this.children[0].click()"><a class="icones_click" href="https://github.com/velocirary" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a></li>
+                        <li onclick="this.children[0].click()"><a class="icones_click" href="https://www.linkedin.com/in/larissa-severo-886068174/" target="_blank">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></li>
+                        <li onclick="this.children[0].click()"><a class="icones_click" href="https://twitter.com/velocirary_" target="_blank">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a></li>
+                    </ul>
+                
+                    <div id="divFleareon" class="mouse_move umbreon">
+                        <img src="img/fleareonRoupinha.png" class="mouse icone" value="5"/>
+                    </div>
+                </article>
+
+            </section>
+            
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: "acorn";
+    src: url("font/acorn.woff") format("woff");
+}
+
+body {
+    background-color: #d49d4c;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "gt", sans-serif;
+}
+
+h1 {
+    font-family: "acorn", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: min(10vw, 180px);
+    margin: 4vh;
+}
+
+h1, p {
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    width: -webkit-fill-available;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    padding: 10px 20px;
+    margin-right: 2%;
+    margin-top: 1.6em;
+}
+
+.eevee {
+    height: 100vh;
+}
+
+.eevee .eeveeBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(img/eevee_icon_by_delios700_d5hki7t-fullview.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position-y: bottom;
+    height: 100vh;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.eevee article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.backgroundEtoF {
+    display: inline-flex;
+    background-color: #d4594c;
+}
+
+.fleareon {
+    height: 70vh;
+}
+
+.fleareon .fleareonBackground {
+    position: absolute;
+    background-image: url(img/481195.jpg);
+    background-color: #ff7924;
+    filter: blur(5px);
+    z-index: -1;
+    width: 100%;
+}
+
+.fleareon article {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.backgroundFtoU {
+    display: flex;
+    background-color: #d4594c;
+}
+
+.umbreon {
+    height: 70vh;
+}
+
+.umbreon .umbreonBackground {
+    position: absolute;
+    background-image: url(img/umbreon.jpg);
+    background-color: #474251;
+    filter: blur(5px);
+    z-index: -1;
+    width: 100%;
+}
+
+.umbreon article {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.parallax {
+    background-attachment: fixed !important;
+    background-position: bottom right;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100vh !important;
+}
+
+.parallax h1,
+.parallax p {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

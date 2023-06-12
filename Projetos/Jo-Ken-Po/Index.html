@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JokenPô | ✊🏻🖐🏻✌🏻 </title>    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>Faça sua escolha!</h1>
+        <p>Jo-Ken-Pô</p>
+        <div class="wrapper-btn">
+            <button id="Pedra" onclick="jogar('PEDRA')">✊🏻</button>
+            <button id="Papel" onclick="jogar('PAPEL')">🖐🏻</button>
+            <button id="Tesoura" onclick="jogar('TESOURA')">✌🏻</button>
+        </div>
+        <div>
+            <p id="Jogada1"></p>
+            <p id="Jogada2"></p>
+            <p id="Jogada3"></p>
+        </div>
+        <div class="container-box">
+            <div id="placar1" class="box a">
+                <h2>Seu <strong id="placarCont1">Placar [0]</strong></h2>
+                <p id="escolhaP1"></p>
+                <p id="placarP1" class="Jogada1">Jogada 1:</p>
+            </div>
+            <div id="placar2" class="box a">
+                <h2>Placar <strong id="placarCont2">Computador [0]</strong></h2>
+                <p id="escolhaPC"></p>
+                <p id="placarPC" class="Jogada1">Jogada 1: </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

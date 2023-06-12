@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .text {
+            padding: 100px 30px;
+        }
+
+        .text p {
+            max-width: 900px;
+            margin: 20px auto;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 35px;
+        }
+
+        .background {
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .one {
+            background-image: url("https://images.unsplash.com/photo-1619781927678-b7ea635a90da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
+        }
+
+        .two {
+            background-image: url("https://images.unsplash.com/photo-1518573484273-eb277fe4b036?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2698&q=80");
+        }
+
+        .three {
+            background-image: url("https://images.unsplash.com/photo-1571164037700-c508b86ac433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2700&q=80");
+        }
+
+        .four {
+            background-image: url("https://images.unsplash.com/photo-1589629828561-aafbbd2cd4ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2700&q=80");
+        }
+
+        .five {
+            background-image: url("https://images.unsplash.com/photo-1619555073947-9e7714a2d7be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2724&q=80");
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var previousScroll = 0;
+            var d = 0;
+            var s = 0;
+
+            // parallax script
+            window.addEventListener("scroll", function () {
+                var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                var parallaxElements = document.getElementsByClassName("parallax");
+
+                for (var i = 0; i < parallaxElements.length; i++) {
+                    if (currentScroll > previousScroll) {
+                        d = s - 2;
+                        parallaxElements[i].style.backgroundPositionY = d + "px";
+                    } else {
+                        d = s + 2;
+                        parallaxElements[i].style.backgroundPositionY = d + "px";
+                    }
+                }
+
+                previousScroll = currentScroll;
+                s = d;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="background one parallax"></div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+    </div>
+    <div class="background two parallax"></div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+    </div>
+    <div class="background three parallax"></div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+    </div>
+    <div class="background four parallax"></div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+    </div>
+    <div class="background five parallax"></div>
+</body>
+
+</html>
